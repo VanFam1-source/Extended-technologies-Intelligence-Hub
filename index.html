@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extended Technologies News Hub</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            // Corporate Dark Palette based on Slate/Zinc
+            'corp-bg': '#020617',       // Slate 950 - Main Background
+            'corp-card': '#0f172a',     // Slate 900 - Card Backgrounds
+            'corp-card-hover': '#1e293b', // Slate 800 - Hover states
+            'corp-border': '#1e293b',   // Slate 800 - Borders
+            'corp-text-primary': '#f8fafc', // Slate 50 - Main Text
+            'corp-text-secondary': '#94a3b8', // Slate 400 - Secondary Text
+            'corp-accent': '#3b82f6',   // Blue 500 - Primary Actions
+            'corp-accent-hover': '#2563eb', // Blue 600 - Hover Actions
+            'corp-highlight': '#0ea5e9', // Sky 500 - Highlights
+          },
+        },
+      },
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0",
+    "jszip": "https://esm.sh/jszip@3.10.1",
+    "pptxgenjs": "https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.es.js"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-corp-bg text-corp-text-primary antialiased selection:bg-corp-accent selection:text-white">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
